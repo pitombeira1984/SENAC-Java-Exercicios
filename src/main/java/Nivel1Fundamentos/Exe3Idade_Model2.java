@@ -16,6 +16,11 @@ public class Exe3Idade_Model2 {
 			
 			anoAtual = Year.now().getValue();
 			
+			if(anoNascimento > anoAtual) {			//Validando informação.
+				System.out.print("Ano de nascimento é maior que ano atual. Entre com o valor correto");
+				return;
+			}
+			
 			idade = anoAtual - anoNascimento;
 			
 		}
