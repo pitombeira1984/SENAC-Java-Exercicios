@@ -2,7 +2,7 @@ package Nivel2Condicionais;
 
 import java.util.Scanner;
 
-public class Aprovacao {
+public class Exe6Aprovacao {
 
 	public static void main(String[] args) {
 		
