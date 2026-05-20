@@ -1,6 +1,7 @@
 package Nivel1Fundamentos;
 
 import java.time.Year;
+
 import java.util.Scanner;
 
 public class Exe3Idade_Model2 {
@@ -9,10 +10,14 @@ public class Exe3Idade_Model2 {
 		
 		int anoNascimento, anoAtual, idade;
 		
-		try(Scanner sc = new Scanner(System.in)){
+		try(Scanner input = new Scanner(System.in)){
 			
 			System.out.print("Digite seu ano de Nascimento: ");
-			anoNascimento = sc.nextInt();
+			if(!input.hasNextInt()){
+				System.out.print("Dado Invalido. Digite um numero inteiro");
+				return;
+			}
+			anoNascimento = input.nextInt();
 			
 			anoAtual = Year.now().getValue();
 			

@@ -2,7 +2,7 @@ package Nivel1Fundamentos;
 
 import java.util.Scanner;
 
-public class ParOuImpar {
+public class Exe4ParOuImpar {
 
 	public static void main(String[] args) {		
 		
